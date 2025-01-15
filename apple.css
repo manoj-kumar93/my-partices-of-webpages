@@ -1,0 +1,691 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+#main{
+    position: relative;
+    height: 685px;
+    /* border: 2px solid red; */
+}
+#nav{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    position: relative;
+    top:0;
+    height: 50px;
+    position: sticky;
+    /* text-align: center; */
+    display: flex;
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+    z-index: 3  ;
+
+}
+#nav ul li{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+#nav ul li:hover{
+    text-decoration: underline;
+}
+
+#nav1{
+    background-color: gray;
+    color: white;
+    height: 50px;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index:4;
+     
+}
+#navbar1{
+    height: inherit;
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    align-items: center;
+    
+}
+ul li{
+    text-transform: capitalize;
+    font-weight: lighter;
+    color: lightgrey;
+    cursor: pointer;
+}
+li:hover{
+    color:darkgray;
+}
+#nav2{
+    background-color: rgb(25, 25, 25);
+    height: 36px;
+    position: relative;
+    
+}
+#navbar2{
+    height: inherit;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+#navbar2 {
+    color: lightgrey;
+    font-weight: 400;
+}
+#navbar2 a{
+    text-transform: capitalize;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+#image-part{
+    /* background-color: black; */
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+
+#ipad-pro{
+    position: absolute;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* position: absolute; */
+    top: 10px;
+    width: 100%;
+}
+#ipad-pro h1{
+    font-size: 400%;
+    font-weight: 600;
+    text-transform: capitalize;
+    /* font-variant: small-caps; */
+}
+#ipad-pro h3{
+    font-size: 30px;
+    font-weight: lighter;
+    word-spacing: 5px;
+    text-transform: lowercase;
+}
+ #button button{
+    background-color: blue;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+}
+#button button+button{
+    background-color: black;
+    color: blue;
+    border: 2px solid blue;
+    width: 100px;
+
+}
+#button{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+#bg-image{
+    /* background-color: black; */
+    height: 500PX;
+    width: 100%;
+    position:absolute;
+    right: 0PX;
+    margin-left: 0PX;
+    z-index: -1;
+}
+#bg-image img{
+    width:100%;
+    height: 600px;
+    position: absolute;
+    margin-top: 0px;
+    top:100px;
+    left: 0;
+    /* margin-left: 0%; */
+    /* background-color: black; */
+    /* z-index: -1; */
+}
+#main1{
+    position: relative;
+    top: 10px;
+    /* border: 2px solid red; */
+    height: 540px;
+}
+#set-logos{
+    height: 540px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* margin-top: -180px; */
+    /* border: 2px solid red; */
+    margin-top: 90px;
+
+}
+#logos{
+    position: relative;
+    /* margin-top: 0px;  */
+    height: 50px;
+    width: 300px; 
+    fill: blue;	
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+    padding: 10px;
+    /* opacity: 0.7; */
+    /* margin-top: 80px; */
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* transform: rotate(-5deg); */
+    /* border: 2px solid white; */
+}
+#logo1{
+    /* border: 2px solid white; */
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    transform: rotate(-5deg);
+    height: 150px;
+    margin-top: 10px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+#logo2{
+    height: 35px;
+    width: 200px;
+    font-size: 38px;
+    position: absolute;
+    top: 164px;
+    transform: rotate(-4deg);
+    display: flex;
+    left: 90px;
+    /* border: 2px solid white; */
+    z-index: 2;
+    align-items: center;
+    font-weight: 700;
+    /* opacity: 0.7; */
+    /* padding: 15px; */
+}
+#logo3{
+    height: 85px;
+    width: 210px;
+    font-size: 70px;
+    position: absolute;
+    top: 204px;
+    display: flex;
+    align-content: center;
+    transform: rotate(5deg);
+    /* border: 2px solid white; */
+    left: 150px;
+    /* z-index: -1; */
+    word-spacing: 20px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+#logo4{
+    position: absolute;
+    top: 290px;
+    font-size: 60px;
+    transform: rotate(15deg);
+    /* padding: 10px; */
+    padding-right: 40px;
+    width: 280px;
+    right: 60px;
+    /* border: 2px solid white; */
+    left: 80px;
+    height: 100px;
+    opacity: 0.7;
+    z-index: -1;
+
+
+}
+#logo5{
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    top: 375px;
+    /* background-color: white; */
+    color: black !important;
+    fill:lightgray;
+    font-size: 40px;
+    /* transform: rotate(  deg); */
+    /* padding-right: 50px; */
+    /* left: 0; */
+    right: 0;
+    /* opacity: 0.7; */
+
+
+}
+#love{
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    
+}
+#laptop{
+    position: absolute;
+    left: 180px;
+    top:-30px;
+}
+#ipad-mini{
+    position: absolute;
+    top: 125px;
+    right: 200px;
+}
+#airpods{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    left: 180px;
+    /* z-index:1; */
+    /* opacity: 1; */
+
+}
+#ipen{
+    position: absolute;
+    right: 70px;
+    top: 17px;
+    transform: rotate(-15deg);
+}
+#chip{
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    width: 23px;
+    opacity: 1;
+}
+#button-shop{
+    background-color: white;
+    color:blue;
+    /* border: 2px solid blue; */
+    position: absolute;
+    top: 430px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    left: 150px;
+    
+}
+#button-shop button{
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    font-size: 20px;
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+#button-shop button:hover{
+    background-color: blue;
+    color: white;
+}
+.footnote-number{
+    fill: white;
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    
+    
+}
+#main3{
+    position: relative;
+    /* margin-top: 200px; */
+    /* border: 2px solid yellow; */
+    height: 630px;
+    margin-top: 0px;
+    
+}
+#image-part1{
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+#iphone15{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+}
+#ipad-pro1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+#bg-image1{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    /* height: 600px; */
+}
+#bg-image1 img{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    z-index: -1;
+}
+#main4{
+    position: relative;
+    /* border: 2px solid red; */
+    height: 600px;
+    display: flex;
+    width: 100%;
+    /* margin: 20px;  */
+
+}
+#image-macbook img{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+#macbook{
+    width: 100%;
+}
+#watch{
+    width: 100%;
+}
+#macbook-name{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-top: 30PX;
+    font-size: 20PX;
+    text-transform: capitalize;
+    font-weight:100;
+    /* color: white; */
+
+}
+#macbook #button{
+    position: absolute;
+    top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+#watch #button{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+#watch #macbook-name{
+    color: white;
+   font-weight: lighter; 
+   top: 10px;
+   padding: 10px;
+}
+#main5{
+    position: relative;
+    display: flex;
+    /* border: 2px solid red;    */
+    height: 630px;
+    margin-top: 10px;
+    width: 100%;
+    /* margin: 10px; */
+    padding: 10px;  	    
+
+}
+#apple{
+    /* border: 2px solid black; */
+    width: 100%;
+    margin: 10px;
+     
+}
+#macbook-pro{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    margin: 5px;
+}
+#apple-image img{
+    width: 100%;
+    height:600px;
+}
+#macbook-image img{
+    width: 100%;
+    height:600px;
+}
+#apple-name {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    top: 65px;
+}
+#macbook-name1{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    top: 65px;
+
+}
+#apple-name  p{
+    font-size: 25px;
+}
+#macbook-name1  p{
+    font-size: 25px;
+}
+#apple #button{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    top: 140px;
+}
+#apple #button button+button{
+    background-color: white; 
+    width: 150px;
+}
+#macbook-pro #button{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    top: 120px;
+}
+#macbook-pro #button button+button{
+    /* background-color: white; */
+    width: 100px;
+    border: none;
+}
+#main6{
+    /* border: 2px solid red; */
+    height: 630px;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+    /* margin: 10px; */
+}
+#ipad-air{
+    
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid black; */
+    margin: 5px;
+}
+#trade{
+    
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid yellow; */
+    margin: 5px;
+}
+#ipad-air-image img{
+    width: 100%;
+    height: 600px;
+}
+#trade-image img{
+    width: 100%;
+    height: 600px;
+}
+#ipad-air-name{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    top: 55px;
+}
+#trade-name1{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    top: 85px;  
+    
+}
+#ipad-air #button{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    top: 60px;
+}
+#trade #button{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    top: 130px;
+}
+#ipad-air #button button+button{
+    background-color: white;
+    color: blue;
+}
+#ipad-air #button button{
+    background-color: black;
+    color: white;
+}
+#button button+button:hover{
+    background-color: blue;
+    color: white;
+}
+#main7{
+    position: relative;
+    /* border: 2px solid red; */
+    height: 930px;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+    display: flex;
+    
+}
+#content{
+    height: inherit;
+    width: 70%;
+    margin: auto;
+    /* margin-top: 10px; */
+    
+}
+#content p{
+    text-align: justify;
+    word-spacing: 5px;
+    color: gray;
+    /* letter-spacing: 10px; */
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+#footer-table{
+    position: absolute;
+    /* border: 2px solid red; */
+    margin-top: 10pX;
+    height: 400px;
+    width: 70%;
+}
+#footer-table table{
+    height: 400px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-flex; */
+    align-items: center;
+
+}
+#footer-table table th{
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+#footer-table table td{
+    text-transform: capitalize;
+    color: gray;
+    cursor: pointer;
+
+}
+#footer-table table td:hover{
+    text-decoration: underline;
+}
